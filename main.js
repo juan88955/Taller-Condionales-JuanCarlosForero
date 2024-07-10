@@ -1,11 +1,9 @@
-// // //01 comparar numeros
+// //01 comparar numeros
 // let numero1 = 12;
 // let numero2 = 9;
 
 // if (numero1 > numero2) {
 //     console.log("El primer número (12) es mayor que el segundo número (9).");
-// } else {
-//     console.log("El primer número (12) no es mayor que el segundo número (9).");
 // }
 
 
@@ -39,11 +37,11 @@
 // let num3 = 12;
 
 // if (num1 <= num2 && num1 <= num3) {
-//     console.log("El número más chico es: " + num1);
+//     alert("El número más chico es: " + num1);
 // } else if (num2 <= num1 && num2 <= num3) {
-//     console.log("El número más chico es: " + num2);
+//     alert("El número más chico es: " + num2);
 // } else {
-//     console.log("El número más chico es: " + num3);
+//     alert("El número más chico es: " + num3);
 // }
 
 
