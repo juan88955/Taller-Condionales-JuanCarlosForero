@@ -97,16 +97,17 @@
 // console.log("¿Puede conducir?: " + (puedeConducir ? "Sí" : "No"));
 
 
-// //07 verificacion de ingreso
+//07 verificacion de ingreso
 // let nombre = prompt("Ingresa tu nombre:");
-// let pase = prompt("¿Qué tipo de pase tienes? (vip/normal)");
 // let tieneEntrada = prompt("¿Tienes entrada? (si/no)");
+// let pase = prompt("¿Qué tipo de pase tienes? (vip/normal)");
 // let nombreVIP = "Carlos";
 
 // if (nombre === nombreVIP || pase === "vip") {
 //     alert("¡Bienvenid@ " + nombre + "!");
 // } else if (tieneEntrada === "si") {
 //     let usarEntrada = prompt("¿Deseas usar tu entrada? (si/no)");
+
 //     if (usarEntrada === "si") {
 //         alert("¡Bienvenid@ " + nombre + "!");
 //     } else {
@@ -126,44 +127,80 @@
 //     }
 // }
 
+// // el ejercicio 07 lo hice de dos maneras jeje este segundo es como yo lo analice
+// let nombre = prompt("Ingresa tu nombre:");
+// let tienePase = prompt("¿Tienes pase? (si/no)");
+// let nombreVIP = "Carlos";
+
+// if (nombre === nombreVIP) {
+//     alert("¡Bienvenid@ " + nombre + "! Disfruta tu acceso VIP.");
+// } else if (tienePase === "si") {
+//     let tipoPase = prompt("¿Qué tipo de pase tienes? (vip/normal)");
+
+//     if (tipoPase === "vip") {
+//         alert("¡Bienvenid@ " + nombre + "! Disfruta tu acceso VIP.");
+//     } else if (tipoPase === "normal") {
+//         let usarPase = prompt("¿Deseas usar tu pase normal? (si/no)");
+//         if (usarPase === "si") {
+//             alert("¡Bienvenid@ " + nombre + "!");
+//         } else {
+//             alert("Gracias por tu visita. ¡Hasta pronto!");
+//         }
+//     } else {
+//         alert("Tipo de pase no válido. No se permite el ingreso.");
+//     }
+// } else {
+//     let quiereComprar = prompt("No tienes pase. ¿Deseas comprar uno? (si/no)");
+//     if (quiereComprar === "si") {
+//         let dinero = prompt("¿Cuánto dinero tienes disponible?");
+//         if (Number(dinero) >= 1000) {
+//             alert("Venta exitosa. ¡Bienvenid@ " + nombre + "!");
+//         } else {
+//             alert("Lo siento, no tienes suficiente dinero para comprar un pase.");
+//         }
+//     } else {
+//         alert("Gracias por tu visita. ¡Hasta pronto!");
+//     }
+// }
+
 
 // //08  número adivinar
-let numeroIncognita = 7;
+// let numeroIncognita = 7;
 
-let numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 1:");
-numeroIngresado = Number(numeroIngresado);
+// let numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 1:");
+// numeroIngresado = Number(numeroIngresado);
 
-if (numeroIngresado === numeroIncognita) {
-    alert("Ganaste, has adivinado el número.");
-} else if (numeroIngresado < numeroIncognita) {
-    alert("El número ingresado es menor, vuelve a intentarlo.");
-} else {
-    alert("El número ingresado es mayor, vuelve a intentarlo.");
-}
+// if (numeroIngresado === numeroIncognita) {
+//     alert("Ganaste, has adivinado el número.");
+// } else if (numeroIngresado < numeroIncognita) {
+//     alert("El número ingresado es menor, vuelve a intentarlo.");
+// } else {
+//     alert("El número ingresado es mayor, vuelve a intentarlo.");
+// }
 
-if (numeroIngresado !== numeroIncognita) {
-    numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 2:");
-    numeroIngresado = Number(numeroIngresado);
+// if (numeroIngresado !== numeroIncognita) {
+//     numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 2:");
+//     numeroIngresado = Number(numeroIngresado);
 
-    if (numeroIngresado === numeroIncognita) {
-        alert("Ganaste, has adivinado el número.");
-    } else if (numeroIngresado < numeroIncognita) {
-        alert("El número ingresado es menor, vuelve a intentarlo.");
-    } else {
-        alert("El número ingresado es mayor, vuelve a intentarlo.");
-    }
-}
+//     if (numeroIngresado === numeroIncognita) {
+//         alert("Ganaste, has adivinado el número.");
+//     } else if (numeroIngresado < numeroIncognita) {
+//         alert("El número ingresado es menor, vuelve a intentarlo.");
+//     } else {
+//         alert("El número ingresado es mayor, vuelve a intentarlo.");
+//     }
+// }
 
-if (numeroIngresado !== numeroIncognita) {
-    numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 3:");
-    numeroIngresado = Number(numeroIngresado);
+// if (numeroIngresado !== numeroIncognita) {
+//     numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 3:");
+//     numeroIngresado = Number(numeroIngresado);
 
-    if (numeroIngresado === numeroIncognita) {
-        alert("Ganaste, has adivinado el número.");
-    } else {
-        alert("Lo siento, no adivinaste. El número era " + numeroIncognita);
-    }
-}
+//     if (numeroIngresado === numeroIncognita) {
+//         alert("Ganaste, has adivinado el número.");
+//     } else {
+//         alert("Lo siento, no adivinaste. El número era " + numeroIncognita);
+//     }
+// }
 
 
 
@@ -192,27 +229,43 @@ if (numeroIngresado !== numeroIncognita) {
 
 
 // //10 PIEDRA, PAPEL o TIJERAS
-// let jugador1 = prompt("Jugador 1, elige PIEDRA, PAPEL o TIJERAS:").toUpperCase();
-// let jugador2 = prompt("Jugador 2, elige PIEDRA, PAPEL o TIJERAS:").toUpperCase();
+// let jugador1 = prompt("Jugador 1, elige piedra, papel o tijeras:");
+// let jugador2 = prompt("Jugador 2, elige piedra, papel o tijeras:");
 
-// if ((jugador1 === "PIEDRA" || jugador1 === "PAPEL" || jugador1 === "TIJERAS") &&
-//     (jugador2 === "PIEDRA" || jugador2 === "PAPEL" || jugador2 === "TIJERAS")) {
-
-//     if (jugador1 === jugador2) {
-//         alert("¡Es un empate!");
-//     } else if (
-//         (jugador1 === "PIEDRA" && jugador2 === "TIJERAS") ||
-//         (jugador1 === "PAPEL" && jugador2 === "PIEDRA") ||
-//         (jugador1 === "TIJERAS" && jugador2 === "PAPEL")
-//     ) {
-//         alert("¡Jugador 1 gana!");
+// if (jugador1 === "piedra") {
+//     if (jugador2 === "piedra") {
+//         alert("EMPATE");
+//     } else if (jugador2 === "papel") {
+//         alert("Gana el jugador 2");
+//     } else if (jugador2 === "tijeras") {
+//         alert("Gana el jugador 1");
 //     } else {
-//         alert("¡Jugador 2 gana!");
+//         alert("Jugador 2 esta haciendo trampa");
 //     }
-
+// } else if (jugador1 === "papel") {
+//     if (jugador2 === "piedra") {
+//         alert("Gana el jugador 1");
+//     } else if (jugador2 === "papel") {
+//         alert("EMPATE");
+//     } else if (jugador2 === "tijeras") {
+//         alert("Gana el jugador 2");
+//     } else {
+//         alert("Jugador 2 esta haciendo trampa");
+//     }
+// } else if (jugador1 === "tijeras") {
+//     if (jugador2 === "piedra") {
+//         alert("Gana el jugador 2");
+//     } else if (jugador2 === "papel") {
+//         alert("Gana el jugador 1");
+//     } else if (jugador2 === "tijeras") {
+//         alert("EMPATE");
+//     } else {
+//         alert("Jugador 2 esta haciendo trampa");
+//     }
 // } else {
-//     alert("¡Uno de los jugadores ha hecho trampa!");
+//     alert("Jugador 1 hace trampa");
 // }
+
 
 // //11 mostrar mensaje segun color ingresado
 // let colores = prompt("¿Qué tal andas hoy? Dime un color.");
@@ -244,7 +297,7 @@ if (numeroIngresado !== numeroIncognita) {
 // //12 operaciones matemáticas básicas según la entrada del usuario
 // let num1 = parseFloat(prompt("Ingresa el primer número:"));
 // let num2 = parseFloat(prompt("Ingresa el segundo número:"));
-// let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division):").toLowerCase();
+// let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division):");
 // let resultado;
 
 // switch (operacion) {
@@ -271,6 +324,33 @@ if (numeroIngresado !== numeroIncognita) {
 //     default:
 //         alert("Operación no reconocida. Por favor, ingresa suma, resta, multiplicacion o division.");
 // }
+
+// let num1 = parseFloat(prompt("Ingresa el primer número:"));
+// let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+// let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division):");
+// let resultado;
+
+// if (operacion === "suma") {
+//     resultado = num1 + num2;
+//     alert("El resultado de la suma es: " + resultado)
+// } else if (operacion === "resta") {
+//     resultado = num1 - num2;
+//     alert("El resultado de la resta es: " + resultado);
+// } else if (operacion === "multiplicacion") {
+//     resultado = num1 * num2;
+//     alert("El resultado de la multiplicación es: " + resultado);
+// } else if (operacion === "division") {
+//     if (num2 !== 0) {
+//         resultado = num1 / num2;
+//         alert("El resultado de la división es: " + resultado);
+//     } else {
+//         alert("ERROR: No se puede dividir por cero");
+//     }
+// } else {
+//     alert("Operación no reconocida. Por favor, ingresa suma, resta, multiplicacion o division.");
+// }
+
+
 
 
 // //13 pedir datos al usuario
