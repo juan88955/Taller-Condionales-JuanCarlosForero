@@ -97,7 +97,7 @@
 // console.log("¿Puede conducir?: " + (puedeConducir ? "Sí" : "No"));
 
 
-//07 verificacion de ingreso
+// 07 verificacion de ingreso
 // let nombre = prompt("Ingresa tu nombre:");
 // let tieneEntrada = prompt("¿Tienes entrada? (si/no)");
 // let pase = prompt("¿Qué tipo de pase tienes? (vip/normal)");
@@ -353,36 +353,36 @@
 
 
 
-// //13 pedir datos al usuario
-// let nombre = prompt("Ingrese su nombre:");
-// let apellido = prompt("Ingrese su apellido:");
-// let numeroDocumento = prompt("Ingrese su número de documento:");
-// let fechaNacimiento = prompt("Ingrese su fecha de nacimiento (DD/MM/AAAA):");
-// let lugarNacimiento = prompt("Ingrese su lugar de nacimiento:");
+//13 pedir datos al usuario
+let nombre = prompt("Ingrese su nombre:");
+let apellido = prompt("Ingrese su apellido:");
+let numeroDocumento = prompt("Ingrese su número de documento:");
+let fechaNacimiento = prompt("Ingrese su fecha de nacimiento (DD/MM/AAAA):");
+let lugarNacimiento = prompt("Ingrese su lugar de nacimiento:");
 
-// let mensaje = "Datos ingresados:\n" +
-//     "Nombre: " + nombre + "\n" +
-//     "Apellido: " + apellido + "\n" +
-//     "Número de Documento: " + numeroDocumento + "\n" +
-//     "Fecha de Nacimiento: " + fechaNacimiento + "\n" +
-//     "Lugar de Nacimiento: " + lugarNacimiento + "\n\n" +
-//     "¿Están correctos estos datos?";
+let mensaje = "Datos ingresados:\n" +
+    "Nombre: " + nombre + "\n" +
+    "Apellido: " + apellido + "\n" +
+    "Número de Documento: " + numeroDocumento + "\n" +
+    "Fecha de Nacimiento: " + fechaNacimiento + "\n" +
+    "Lugar de Nacimiento: " + lugarNacimiento + "\n\n" +
+    "¿Están correctos estos datos?";
 
-// let confirmacion = confirm(mensaje);
+let confirmacion = confirm(mensaje);
 
-// if (confirmacion) {
-//     let dni = {
-//         nombre: nombre,
-//         apellido: apellido,
-//         numeroDocumento: numeroDocumento,
-//         fechaNacimiento: fechaNacimiento,
-//         lugarNacimiento: lugarNacimiento
-//     };
+if (confirmacion) {
+    let cedula = {
+        nombre: nombre,
+        apellido: apellido,
+        numeroDocumento: numeroDocumento,
+        fechaNacimiento: fechaNacimiento,
+        lugarNacimiento: lugarNacimiento
+    };
 
-//     console.table(dni);
+    console.table(cedula);
 
-//     console.log("Registro exitoso.");
-// } else {
+    console.log("Registro exitoso.");
+} else {
 
-//     console.log("Vuelva a intentarlo en 1 mes.");
-// }
+    console.log("Vuelva a intentarlo en 1 mes.");
+}
