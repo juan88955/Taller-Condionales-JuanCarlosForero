@@ -1,354 +1,354 @@
-// //01 comparar numeros
-// let numero1 = 12;
-// let numero2 = 9;
+//01 comparar numeros
+let numero1 = 12;
+let numero2 = 9;
 
-// if (numero1 > numero2) {
-//     console.log("El primer número (12) es mayor que el segundo número (9).");
-// }
-
-
-// //02 comparar igualdad
-// let numero1 = 3;
-// let numero2 = 2;
-
-// if (numero1 === numero2) {
-//     console.log("Los números son iguales.");
-// } else {
-//     console.log("Los números son diferentes.");
-// }
+if (numero1 > numero2) {
+    console.log("El primer número (12) es mayor que el segundo número (9).");
+}
 
 
-// //03 numero es el mas grande o si son iguales
-// let num1 = 5;
-// let num2 = 3;
+//02 comparar igualdad
+let numero1 = 3;
+let numero2 = 2;
 
-// if (num1 > num2) {
-//     console.log("El primer número (" + num1 + ") es el más grande.");
-// } else if (num2 > num1) {
-//     console.log("El segundo número (" + num2 + ") es el más grande.");
-// } else {
-//     console.log("Los números son iguales (" + num1 + ").");
-// }
+if (numero1 === numero2) {
+    console.log("Los números son iguales.");
+} else {
+    console.log("Los números son diferentes.");
+}
 
 
-// //04 numero chico 
-// let num1 = 32;
-// let num2 = 24;
-// let num3 = 12;
+//03 numero es el mas grande o si son iguales
+let num1 = 5;
+let num2 = 3;
 
-// if (num1 <= num2 && num1 <= num3) {
-//     alert("El número más chico es: " + num1);
-// } else if (num2 <= num1 && num2 <= num3) {
-//     alert("El número más chico es: " + num2);
-// } else {
-//     alert("El número más chico es: " + num3);
-// }
-
-
-// //05 Comparar altura-Comparar edad
-// let persona1 = {
-//     nombre: "Luz",
-//     edad: 48,
-//     altura: 158
-// };
-
-// let persona2 = {
-//     nombre: "David",
-//     edad: 26,
-//     altura: 180
-// };
-
-// if (persona1.altura > persona2.altura) {
-//    alert(persona1.nombre + " es más alta que " + persona2.nombre);
-// } else if (persona2.altura > persona1.altura) {
-//    alert(persona2.nombre + " es más alto que " + persona1.nombre);
-// } else {
-//    alert(persona1.nombre + " y " + persona2.nombre + " tienen la misma altura");
-// }
-
-// if (persona1.edad > persona2.edad) {
-//    alert(persona1.nombre + " es mayor que " + persona2.nombre);
-// } else if (persona2.edad > persona1.edad) {
-//    alert(persona2.nombre + " es mayor que " + persona1.nombre);
-// } else {
-//    alert(persona1.nombre + " y " + persona2.nombre + " tienen la misma edad");
-// }
+if (num1 > num2) {
+    console.log("El primer número (" + num1 + ") es el más grande.");
+} else if (num2 > num1) {
+    console.log("El segundo número (" + num2 + ") es el más grande.");
+} else {
+    console.log("Los números son iguales (" + num1 + ").");
+}
 
 
-// //06 capacitado para conducir
-// let nombre = prompt("Ingresa tu nombre:");
-// let edad = (prompt("Ingresa tu edad:"));
-// let altura = (prompt("Ingresa tu altura en centímetros:"));
-// let vision = (prompt("Ingresa tu visión del 1 al 10:"));
+//04 numero chico 
+let num1 = 32;
+let num2 = 24;
+let num3 = 12;
 
-// let puedeConducir = edad >= 18 && altura > 150 && vision >= 8;
-
-// if (puedeConducir) {
-//     alert(nombre + ", estás capacitado para conducir.");
-// } else {
-//     alert(nombre + ", no estás capacitado para conducir.");
-// }
-
-// console.log("Detalles:");
-// console.log("Nombre: " + nombre);
-// console.log("Edad: " + edad + " años");
-// console.log("Altura: " + altura + " cm");
-// console.log("Visión: " + vision + "/10");
-// console.log("¿Puede conducir?: " + (puedeConducir ? "Sí" : "No"));
+if (num1 <= num2 && num1 <= num3) {
+    alert("El número más chico es: " + num1);
+} else if (num2 <= num1 && num2 <= num3) {
+    alert("El número más chico es: " + num2);
+} else {
+    alert("El número más chico es: " + num3);
+}
 
 
-// 07 verificacion de ingreso
-// let nombre = prompt("Ingresa tu nombre:");
-// let tieneEntrada = prompt("¿Tienes entrada? (si/no)");
-// let pase = prompt("¿Qué tipo de pase tienes? (vip/normal)");
-// let nombreVIP = "Carlos";
+//05 Comparar altura-Comparar edad
+let persona1 = {
+    nombre: "Luz",
+    edad: 48,
+    altura: 158
+};
 
-// if (nombre === nombreVIP || pase === "vip") {
-//     alert("¡Bienvenid@ " + nombre + "!");
-// } else if (tieneEntrada === "si") {
-//     let usarEntrada = prompt("¿Deseas usar tu entrada? (si/no)");
+let persona2 = {
+    nombre: "David",
+    edad: 26,
+    altura: 180
+};
 
-//     if (usarEntrada === "si") {
-//         alert("¡Bienvenid@ " + nombre + "!");
-//     } else {
-//         alert("Gracias por tu visita. ¡Hasta pronto!");
-//     }
-// } else {
-//     let quiereComprar = prompt("¿Deseas comprar una entrada? (si/no)");
-//     if (quiereComprar === "si") {
-//         let dinero = prompt("¿Cuánto dinero tienes disponible?");
-//         if ((dinero) >= 1000) {
-//             alert("Venta exitosa. ¡Bienvenid@ " + nombre + "!");
-//         } else {
-//             alert("Lo siento, no tienes suficiente dinero para comprar la entrada.");
-//         }
-//     } else {
-//         alert("Gracias por tu visita. ¡Hasta pronto!");
-//     }
-// }
+if (persona1.altura > persona2.altura) {
+   alert(persona1.nombre + " es más alta que " + persona2.nombre);
+} else if (persona2.altura > persona1.altura) {
+   alert(persona2.nombre + " es más alto que " + persona1.nombre);
+} else {
+   alert(persona1.nombre + " y " + persona2.nombre + " tienen la misma altura");
+}
 
-// // el ejercicio 07 lo hice de dos maneras jeje este segundo es como yo lo analice
-// let nombre = prompt("Ingresa tu nombre:");
-// let tienePase = prompt("¿Tienes pase? (si/no)");
-// let nombreVIP = "Carlos";
-
-// if (nombre === nombreVIP) {
-//     alert("¡Bienvenid@ " + nombre + "! Disfruta tu acceso VIP.");
-// } else if (tienePase === "si") {
-//     let tipoPase = prompt("¿Qué tipo de pase tienes? (vip/normal)");
-
-//     if (tipoPase === "vip") {
-//         alert("¡Bienvenid@ " + nombre + "! Disfruta tu acceso VIP.");
-//     } else if (tipoPase === "normal") {
-//         let usarPase = prompt("¿Deseas usar tu pase normal? (si/no)");
-//         if (usarPase === "si") {
-//             alert("¡Bienvenid@ " + nombre + "!");
-//         } else {
-//             alert("Gracias por tu visita. ¡Hasta pronto!");
-//         }
-//     } else {
-//         alert("Tipo de pase no válido. No se permite el ingreso.");
-//     }
-// } else {
-//     let quiereComprar = prompt("No tienes pase. ¿Deseas comprar uno? (si/no)");
-//     if (quiereComprar === "si") {
-//         let dinero = prompt("¿Cuánto dinero tienes disponible?");
-//         if (Number(dinero) >= 1000) {
-//             alert("Venta exitosa. ¡Bienvenid@ " + nombre + "!");
-//         } else {
-//             alert("Lo siento, no tienes suficiente dinero para comprar un pase.");
-//         }
-//     } else {
-//         alert("Gracias por tu visita. ¡Hasta pronto!");
-//     }
-// }
+if (persona1.edad > persona2.edad) {
+   alert(persona1.nombre + " es mayor que " + persona2.nombre);
+} else if (persona2.edad > persona1.edad) {
+   alert(persona2.nombre + " es mayor que " + persona1.nombre);
+} else {
+   alert(persona1.nombre + " y " + persona2.nombre + " tienen la misma edad");
+}
 
 
-// //08  número adivinar
-// let numeroIncognita = 7;
+//06 capacitado para conducir
+let nombre = prompt("Ingresa tu nombre:");
+let edad = (prompt("Ingresa tu edad:"));
+let altura = (prompt("Ingresa tu altura en centímetros:"));
+let vision = (prompt("Ingresa tu visión del 1 al 10:"));
 
-// let numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 1:");
-// numeroIngresado = Number(numeroIngresado);
+let puedeConducir = edad >= 18 && altura > 150 && vision >= 8;
 
-// if (numeroIngresado === numeroIncognita) {
-//     alert("Ganaste, has adivinado el número.");
-// } else if (numeroIngresado < numeroIncognita) {
-//     alert("El número ingresado es menor, vuelve a intentarlo.");
-// } else {
-//     alert("El número ingresado es mayor, vuelve a intentarlo.");
-// }
+if (puedeConducir) {
+    alert(nombre + ", estás capacitado para conducir.");
+} else {
+    alert(nombre + ", no estás capacitado para conducir.");
+}
 
-// if (numeroIngresado !== numeroIncognita) {
-//     numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 2:");
-//     numeroIngresado = Number(numeroIngresado);
-
-//     if (numeroIngresado === numeroIncognita) {
-//         alert("Ganaste, has adivinado el número.");
-//     } else if (numeroIngresado < numeroIncognita) {
-//         alert("El número ingresado es menor, vuelve a intentarlo.");
-//     } else {
-//         alert("El número ingresado es mayor, vuelve a intentarlo.");
-//     }
-// }
-
-// if (numeroIngresado !== numeroIncognita) {
-//     numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 3:");
-//     numeroIngresado = Number(numeroIngresado);
-
-//     if (numeroIngresado === numeroIncognita) {
-//         alert("Ganaste, has adivinado el número.");
-//     } else {
-//         alert("Lo siento, no adivinaste. El número era " + numeroIncognita);
-//     }
-// }
+console.log("Detalles:");
+console.log("Nombre: " + nombre);
+console.log("Edad: " + edad + " años");
+console.log("Altura: " + altura + " cm");
+console.log("Visión: " + vision + "/10");
+console.log("¿Puede conducir?: " + (puedeConducir ? "Sí" : "No"));
 
 
+07 verificacion de ingreso
+let nombre = prompt("Ingresa tu nombre:");
+let tieneEntrada = prompt("¿Tienes entrada? (si/no)");
+let pase = prompt("¿Qué tipo de pase tienes? (vip/normal)");
+let nombreVIP = "Carlos";
 
-// //09 edad 
-// let edad = prompt("Por favor, ingresa tu edad:");
-// edad = Number(edad);
+if (nombre === nombreVIP || pase === "vip") {
+    alert("¡Bienvenid@ " + nombre + "!");
+} else if (tieneEntrada === "si") {
+    let usarEntrada = prompt("¿Deseas usar tu entrada? (si/no)");
 
-// if (edad >= 0 && edad <= 12) {
-//     alert("Eres un infante.");
-// } else if (edad >= 13 && edad <= 18) {
-//     alert("Eres un adolescente.");
-// } else if (edad >= 19 && edad <= 45) {
-//     alert("Eres un mayor joven.");
-// } else if (edad > 45 && edad <= 100) {
-//     alert("Eres un anciano.");
-// } else if (edad > 100) {
-//     let confirmacion = confirm("¿En realidad tienes " + edad + " años?");
-//     if (confirmacion) {
-//         alert("Eres muy mayor.");
-//     } else {
-//         alert("Entiendo, parece que hubo un error al ingresar la edad.");
-//     }
-// } else {
-//     alert("La edad ingresada no es válida.");
-// }
+    if (usarEntrada === "si") {
+        alert("¡Bienvenid@ " + nombre + "!");
+    } else {
+        alert("Gracias por tu visita. ¡Hasta pronto!");
+    }
+} else {
+    let quiereComprar = prompt("¿Deseas comprar una entrada? (si/no)");
+    if (quiereComprar === "si") {
+        let dinero = prompt("¿Cuánto dinero tienes disponible?");
+        if ((dinero) >= 1000) {
+            alert("Venta exitosa. ¡Bienvenid@ " + nombre + "!");
+        } else {
+            alert("Lo siento, no tienes suficiente dinero para comprar la entrada.");
+        }
+    } else {
+        alert("Gracias por tu visita. ¡Hasta pronto!");
+    }
+}
 
+// el ejercicio 07 lo hice de dos maneras jeje este segundo es como yo lo analice
+let nombre = prompt("Ingresa tu nombre:");
+let tienePase = prompt("¿Tienes pase? (si/no)");
+let nombreVIP = "Carlos";
 
-// //10 PIEDRA, PAPEL o TIJERAS
-// let jugador1 = prompt("Jugador 1, elige piedra, papel o tijeras:");
-// let jugador2 = prompt("Jugador 2, elige piedra, papel o tijeras:");
+if (nombre === nombreVIP) {
+    alert("¡Bienvenid@ " + nombre + "! Disfruta tu acceso VIP.");
+} else if (tienePase === "si") {
+    let tipoPase = prompt("¿Qué tipo de pase tienes? (vip/normal)");
 
-// if (jugador1 === "piedra") {
-//     if (jugador2 === "piedra") {
-//         alert("EMPATE");
-//     } else if (jugador2 === "papel") {
-//         alert("Gana el jugador 2");
-//     } else if (jugador2 === "tijeras") {
-//         alert("Gana el jugador 1");
-//     } else {
-//         alert("Jugador 2 esta haciendo trampa");
-//     }
-// } else if (jugador1 === "papel") {
-//     if (jugador2 === "piedra") {
-//         alert("Gana el jugador 1");
-//     } else if (jugador2 === "papel") {
-//         alert("EMPATE");
-//     } else if (jugador2 === "tijeras") {
-//         alert("Gana el jugador 2");
-//     } else {
-//         alert("Jugador 2 esta haciendo trampa");
-//     }
-// } else if (jugador1 === "tijeras") {
-//     if (jugador2 === "piedra") {
-//         alert("Gana el jugador 2");
-//     } else if (jugador2 === "papel") {
-//         alert("Gana el jugador 1");
-//     } else if (jugador2 === "tijeras") {
-//         alert("EMPATE");
-//     } else {
-//         alert("Jugador 2 esta haciendo trampa");
-//     }
-// } else {
-//     alert("Jugador 1 hace trampa");
-// }
-
-
-// //11 mostrar mensaje segun color ingresado
-// let colores = prompt("¿Qué tal andas hoy? Dime un color.");
-
-// switch (colores) {
-//     case "rojo":
-//         alert("Uy, estas enojado!");
-//         break;
-//     case "azul":
-//         alert("Día tranqui, colega.");
-//         break;
-//     case "verde":
-//         alert("Hoy puede ser un día genial :)");
-//         break;
-//     case "amarillo":
-//         alert("Como el dia soleado de hoy");
-//         break;
-//     case "gris":
-//         alert("Ánimo, que no todo es tan malo.");
-//         break;
-//     case "negro":
-//         alert("Uy tienes, días complicados.");
-//         break;
-//     default:
-//         alert("Interesante color. pero no lo tengo :(");
-// }
+    if (tipoPase === "vip") {
+        alert("¡Bienvenid@ " + nombre + "! Disfruta tu acceso VIP.");
+    } else if (tipoPase === "normal") {
+        let usarPase = prompt("¿Deseas usar tu pase normal? (si/no)");
+        if (usarPase === "si") {
+            alert("¡Bienvenid@ " + nombre + "!");
+        } else {
+            alert("Gracias por tu visita. ¡Hasta pronto!");
+        }
+    } else {
+        alert("Tipo de pase no válido. No se permite el ingreso.");
+    }
+} else {
+    let quiereComprar = prompt("No tienes pase. ¿Deseas comprar uno? (si/no)");
+    if (quiereComprar === "si") {
+        let dinero = prompt("¿Cuánto dinero tienes disponible?");
+        if (Number(dinero) >= 1000) {
+            alert("Venta exitosa. ¡Bienvenid@ " + nombre + "!");
+        } else {
+            alert("Lo siento, no tienes suficiente dinero para comprar un pase.");
+        }
+    } else {
+        alert("Gracias por tu visita. ¡Hasta pronto!");
+    }
+}
 
 
-// //12 operaciones matemáticas básicas según la entrada del usuario
-// let num1 = parseFloat(prompt("Ingresa el primer número:"));
-// let num2 = parseFloat(prompt("Ingresa el segundo número:"));
-// let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division):");
-// let resultado;
+//08  número adivinar
+let numeroIncognita = 7;
 
-// switch (operacion) {
-//     case "suma":
-//         resultado = num1 + num2;
-//         alert("El resultado de la suma es: " + resultado);
-//         break;
-//     case "resta":
-//         resultado = num1 - num2;
-//         alert("El resultado de la resta es: " + resultado);
-//         break;
-//     case "multiplicacion":
-//         resultado = num1 * num2;
-//         alert("El resultado de la multiplicación es: " + resultado);
-//         break;
-//     case "division":
-//         if (num2 !== 0) {
-//             resultado = num1 / num2;
-//             alert("El resultado de la división es: " + resultado);
-//         } else {
-//             alert("ERROR: No se puede dividir por cero");
-//         }
-//         break;
-//     default:
-//         alert("Operación no reconocida. Por favor, ingresa suma, resta, multiplicacion o division.");
-// }
+let numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 1:");
+numeroIngresado = Number(numeroIngresado);
 
-// let num1 = parseFloat(prompt("Ingresa el primer número:"));
-// let num2 = parseFloat(prompt("Ingresa el segundo número:"));
-// let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division):");
-// let resultado;
+if (numeroIngresado === numeroIncognita) {
+    alert("Ganaste, has adivinado el número.");
+} else if (numeroIngresado < numeroIncognita) {
+    alert("El número ingresado es menor, vuelve a intentarlo.");
+} else {
+    alert("El número ingresado es mayor, vuelve a intentarlo.");
+}
 
-// if (operacion === "suma") {
-//     resultado = num1 + num2;
-//     alert("El resultado de la suma es: " + resultado)
-// } else if (operacion === "resta") {
-//     resultado = num1 - num2;
-//     alert("El resultado de la resta es: " + resultado);
-// } else if (operacion === "multiplicacion") {
-//     resultado = num1 * num2;
-//     alert("El resultado de la multiplicación es: " + resultado);
-// } else if (operacion === "division") {
-//     if (num2 !== 0) {
-//         resultado = num1 / num2;
-//         alert("El resultado de la división es: " + resultado);
-//     } else {
-//         alert("ERROR: No se puede dividir por cero");
-//     }
-// } else {
-//     alert("Operación no reconocida. Por favor, ingresa suma, resta, multiplicacion o division.");
-// }
+if (numeroIngresado !== numeroIncognita) {
+    numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 2:");
+    numeroIngresado = Number(numeroIngresado);
+
+    if (numeroIngresado === numeroIncognita) {
+        alert("Ganaste, has adivinado el número.");
+    } else if (numeroIngresado < numeroIncognita) {
+        alert("El número ingresado es menor, vuelve a intentarlo.");
+    } else {
+        alert("El número ingresado es mayor, vuelve a intentarlo.");
+    }
+}
+
+if (numeroIngresado !== numeroIncognita) {
+    numeroIngresado = prompt("Adivina el número (entre 1 y 10). Intento 3:");
+    numeroIngresado = Number(numeroIngresado);
+
+    if (numeroIngresado === numeroIncognita) {
+        alert("Ganaste, has adivinado el número.");
+    } else {
+        alert("Lo siento, no adivinaste. El número era " + numeroIncognita);
+    }
+}
+
+
+
+//09 edad 
+let edad = prompt("Por favor, ingresa tu edad:");
+edad = Number(edad);
+
+if (edad >= 0 && edad <= 12) {
+    alert("Eres un infante.");
+} else if (edad >= 13 && edad <= 18) {
+    alert("Eres un adolescente.");
+} else if (edad >= 19 && edad <= 45) {
+    alert("Eres un mayor joven.");
+} else if (edad > 45 && edad <= 100) {
+    alert("Eres un anciano.");
+} else if (edad > 100) {
+    let confirmacion = confirm("¿En realidad tienes " + edad + " años?");
+    if (confirmacion) {
+        alert("Eres muy mayor.");
+    } else {
+        alert("Entiendo, parece que hubo un error al ingresar la edad.");
+    }
+} else {
+    alert("La edad ingresada no es válida.");
+}
+
+
+//10 PIEDRA, PAPEL o TIJERAS
+let jugador1 = prompt("Jugador 1, elige piedra, papel o tijeras:");
+let jugador2 = prompt("Jugador 2, elige piedra, papel o tijeras:");
+
+if (jugador1 === "piedra") {
+    if (jugador2 === "piedra") {
+        alert("EMPATE");
+    } else if (jugador2 === "papel") {
+        alert("Gana el jugador 2");
+    } else if (jugador2 === "tijeras") {
+        alert("Gana el jugador 1");
+    } else {
+        alert("Jugador 2 esta haciendo trampa");
+    }
+} else if (jugador1 === "papel") {
+    if (jugador2 === "piedra") {
+        alert("Gana el jugador 1");
+    } else if (jugador2 === "papel") {
+        alert("EMPATE");
+    } else if (jugador2 === "tijeras") {
+        alert("Gana el jugador 2");
+    } else {
+        alert("Jugador 2 esta haciendo trampa");
+    }
+} else if (jugador1 === "tijeras") {
+    if (jugador2 === "piedra") {
+        alert("Gana el jugador 2");
+    } else if (jugador2 === "papel") {
+        alert("Gana el jugador 1");
+    } else if (jugador2 === "tijeras") {
+        alert("EMPATE");
+    } else {
+        alert("Jugador 2 esta haciendo trampa");
+    }
+} else {
+    alert("Jugador 1 hace trampa");
+}
+
+
+//11 mostrar mensaje segun color ingresado
+let colores = prompt("¿Qué tal andas hoy? Dime un color.");
+
+switch (colores) {
+    case "rojo":
+        alert("Uy, estas enojado!");
+        break;
+    case "azul":
+        alert("Día tranqui, colega.");
+        break;
+    case "verde":
+        alert("Hoy puede ser un día genial :)");
+        break;
+    case "amarillo":
+        alert("Como el dia soleado de hoy");
+        break;
+    case "gris":
+        alert("Ánimo, que no todo es tan malo.");
+        break;
+    case "negro":
+        alert("Uy tienes, días complicados.");
+        break;
+    default:
+        alert("Interesante color. pero no lo tengo :(");
+}
+
+
+//12 operaciones matemáticas básicas según la entrada del usuario
+let num1 = parseFloat(prompt("Ingresa el primer número:"));
+let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division):");
+let resultado;
+
+switch (operacion) {
+    case "suma":
+        resultado = num1 + num2;
+        alert("El resultado de la suma es: " + resultado);
+        break;
+    case "resta":
+        resultado = num1 - num2;
+        alert("El resultado de la resta es: " + resultado);
+        break;
+    case "multiplicacion":
+        resultado = num1 * num2;
+        alert("El resultado de la multiplicación es: " + resultado);
+        break;
+    case "division":
+        if (num2 !== 0) {
+            resultado = num1 / num2;
+            alert("El resultado de la división es: " + resultado);
+        } else {
+            alert("ERROR: No se puede dividir por cero");
+        }
+        break;
+    default:
+        alert("Operación no reconocida. Por favor, ingresa suma, resta, multiplicacion o division.");
+}
+
+let num1 = parseFloat(prompt("Ingresa el primer número:"));
+let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division):");
+let resultado;
+
+if (operacion === "suma") {
+    resultado = num1 + num2;
+    alert("El resultado de la suma es: " + resultado)
+} else if (operacion === "resta") {
+    resultado = num1 - num2;
+    alert("El resultado de la resta es: " + resultado);
+} else if (operacion === "multiplicacion") {
+    resultado = num1 * num2;
+    alert("El resultado de la multiplicación es: " + resultado);
+} else if (operacion === "division") {
+    if (num2 !== 0) {
+        resultado = num1 / num2;
+        alert("El resultado de la división es: " + resultado);
+    } else {
+        alert("ERROR: No se puede dividir por cero");
+    }
+} else {
+    alert("Operación no reconocida. Por favor, ingresa suma, resta, multiplicacion o division.");
+}
 
 
 
@@ -371,7 +371,7 @@ let mensaje = "Datos ingresados:\n" +
 let confirmacion = confirm(mensaje);
 
 if (confirmacion) {
-    let cedula = {
+    let dni = {
         nombre: nombre,
         apellido: apellido,
         numeroDocumento: numeroDocumento,
@@ -379,7 +379,7 @@ if (confirmacion) {
         lugarNacimiento: lugarNacimiento
     };
 
-    console.table(cedula);
+    console.table(dni);
 
     console.log("Registro exitoso.");
 } else {
